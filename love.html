@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0044)https://libing19910907.github.io/confession/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>to my love</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://libing19910907.github.io/confession/images/love.png" media="screen">
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="./love_files/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="./love_files/jquery.js"></script>
+<script type="text/javascript" src="./love_files/garden.js"></script>
+<script type="text/javascript" src="./love_files/functions.js"></script>
+</head>
+<body>
+
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span>
+				<br />
+				<span class="space" />
+				<span class="comments">*2018—10-19,</span>
+				<br />
+				<span class="space" />
+				<span class="comments">*2019-10-23.</span>
+				<br />
+				<span class="space" />
+				<span class="comments">*/</span>
+				<br /> 等待，只为与你的相遇。
+				<br>
+				<span class="comments">也许没有人会相信,</span>
+				<br /> 这一刹那迸出的毫光，
+				<br />
+				<span class="comments">将要映亮你我漫漫一生。</span>
+				<br />我在那盛开的兰花瓣上写出对你无限的思念与祝福，
+				<br />
+				<span class="comments">并祝你生日快乐今天有了你世界更出色，</span>
+				<br /> 今天有了你星空更辉煌，
+				<br />
+				<span class="comments">今天由于你人间更暖和,</span>
+				<br />今天由于你我觉更幸福!
+				<br />
+				<br> I want to say:
+				<br /> Baby, I love you forever;
+				<br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+			document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+
+</html>
